@@ -1,0 +1,11 @@
+CREATE DEFINER=`root`@`localhost` PROCEDURE `IDpro`(
+
+IN _ID varchar(50),
+IN _pass varchar(50)
+
+)
+BEGIN
+
+SELECT IDuser FROM dbweb.usuarios WHERE Usuario = _ID and Pass = _pass;
+
+END

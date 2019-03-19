@@ -1,0 +1,16 @@
+CREATE DEFINER=`root`@`localhost` PROCEDURE `IDcomp`(
+
+IN _ID varchar(50),
+IN _Nombre varchar(50), 
+IN _Apellido varchar(50),
+IN _Direccion text,
+IN _Pais varchar(50),
+IN _Ciudad varchar(50),
+IN _Cp varchar(50)
+
+)
+BEGIN
+
+UPDATE dbweb.usuarios SET Nombre = _Nombre, Apellido = _Apellido, Direccion = _Direccion,Pais = _Pais,Ciudad = _Ciudad,Cp =_Cp WHERE Usuario = _ID;
+
+END

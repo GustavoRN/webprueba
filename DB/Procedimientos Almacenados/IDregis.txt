@@ -1,0 +1,13 @@
+CREATE DEFINER=`root`@`localhost` PROCEDURE `IDregis`(
+
+IN _ID varchar(50),
+IN _pass varchar(50)
+
+)
+BEGIN
+
+INSERT INTO dbweb.usuarios (Usuario,Pass) VALUES (_ID,_pass);
+
+Select IDuser FROM dbweb.usuarios WHERE Usuario = _ID AND Pass = pass;
+
+END

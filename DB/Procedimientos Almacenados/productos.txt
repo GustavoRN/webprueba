@@ -1,0 +1,9 @@
+CREATE DEFINER=`root`@`localhost` PROCEDURE `productos`(
+
+
+)
+BEGIN
+
+Select * from dbweb.productos;
+
+END

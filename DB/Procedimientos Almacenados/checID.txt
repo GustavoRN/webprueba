@@ -1,0 +1,10 @@
+CREATE DEFINER=`root`@`localhost` PROCEDURE `checID`(
+
+IN _ID varchar(50)
+
+)
+BEGIN
+
+SELECT Usuario FROM dbweb.usuarios WHERE Usuario = _ID ;
+
+END
